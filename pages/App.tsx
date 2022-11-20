@@ -5,8 +5,8 @@ import RPC from "./api/fevmRPC";
 // Adapters
 
 const clientId =
-  "BHr_dKcxC0ecKn_2dZQmQeNdjPgWykMkcodEHkVvPMo71qzOV6SgtoN8KCvFdLN7bf34JOm89vWQMLFmSfIo84A"; // get from https://dashboard.web3auth.io
-
+  "BL205Omc9EDaNvgIY3-q6TgWJnWLqm-bVdGJd7QvZbaPZyEGIadxueB3C-YRvC1Ok5rr5m9TJvspkQ9lEi3htnI"; // get from https://dashboard.web3auth.io
+// if you are hosting the project, you need to have a client id and whitelist your domain name in the dashboard
 function App() {
   const [web3auth, setWeb3auth] = useState<Web3Auth | null>(null);
   const [provider, setProvider] = useState<SafeEventEmitterProvider | null>(
