@@ -118,24 +118,24 @@ function App() {
 
   const loggedInView = (
     <>
-      <div className="flex-container">
+      <div className="flex flex-row w-full h-fit gap-5">
         <div>
-          <button onClick={getAccounts} className="card">
+          <button onClick={getAccounts} className="fevm-grad w-full h-20 text-xl px-3 py-1">
             Get Accounts
           </button>
         </div>
         <div>
-          <button onClick={getBalance} className="card">
+          <button onClick={getBalance} className="fevm-grad w-full h-20 text-xl px-3 py-1">
             Get Balance
           </button>
         </div>
         <div>
-          <button onClick={logout} className="card">
+          <button onClick={logout} className="fevm-grad w-full h-20 text-xl px-3 py-1">
             Log Out
           </button>
         </div>
       </div>
-      <div id="console" style={{ whiteSpace: "pre-line" }}>
+      <div id="console" className="h-fit w-full">
         <p style={{ whiteSpace: "pre-line" }}></p>
       </div>
     </>
@@ -152,7 +152,7 @@ function App() {
 
   return (
     <div className="w-full h-full flex flex-col items-center justify-center">
-      <div className=" flex flex-col justify-evenly items-center backdrop-blur-sm w-full h-full lg:h-1/2 lg:w-1/2 m-5 p-10 rounded-md border-2	 border-cyan-500/40 bg-black/20">
+      <div className=" flex flex-col justify-evenly items-center backdrop-blur-sm w-full h-full lg:h-3/4 lg:w-1/2 m-5 p-10 rounded-md border-2	 border-cyan-500/40 bg-black/20">
         <h1 className="title text-white">
           FEVM Dapp Scaffold<div className="text-cyan-300">NextJS</div>
         </h1>
