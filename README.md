@@ -1,5 +1,11 @@
 ## FEVM DAPP SCAFFOLD
 
+Quick start
+
+```
+npx nextjs-fevm-scaffold <YOUR-APP-NAME>
+```
+
 ### Features
 
 - Creates your Filecoin Address with Social Logins, powered by [Web3Auth](https://web3auth.io)
