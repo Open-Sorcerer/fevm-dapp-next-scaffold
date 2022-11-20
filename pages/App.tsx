@@ -4,7 +4,8 @@ import { CHAIN_NAMESPACES, SafeEventEmitterProvider } from "@web3auth/base";
 import RPC from "./api/fevmRPC";
 // Adapters
 
-const clientId = "YOUR_CLIENT_ID"; // get from https://dashboard.web3auth.io
+const clientId =
+  "BHr_dKcxC0ecKn_2dZQmQeNdjPgWykMkcodEHkVvPMo71qzOV6SgtoN8KCvFdLN7bf34JOm89vWQMLFmSfIo84A"; // get from https://dashboard.web3auth.io
 
 function App() {
   const [web3auth, setWeb3auth] = useState<Web3Auth | null>(null);
@@ -120,17 +121,26 @@ function App() {
     <>
       <div className="flex flex-row w-full h-fit gap-5">
         <div>
-          <button onClick={getAccounts} className="fevm-grad w-full h-20 text-xl px-3 py-1">
+          <button
+            onClick={getAccounts}
+            className="fevm-grad w-full h-20 text-xl px-3 py-1"
+          >
             Get Accounts
           </button>
         </div>
         <div>
-          <button onClick={getBalance} className="fevm-grad w-full h-20 text-xl px-3 py-1">
+          <button
+            onClick={getBalance}
+            className="fevm-grad w-full h-20 text-xl px-3 py-1"
+          >
             Get Balance
           </button>
         </div>
         <div>
-          <button onClick={logout} className="fevm-grad w-full h-20 text-xl px-3 py-1">
+          <button
+            onClick={logout}
+            className="fevm-grad w-full h-20 text-xl px-3 py-1"
+          >
             Log Out
           </button>
         </div>
