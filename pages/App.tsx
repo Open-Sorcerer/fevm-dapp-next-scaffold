@@ -28,12 +28,6 @@ function App() {
             appLogo: "https://web3auth.io/images/w3a-L-Favicon-1.svg", // Your App Logo Here
           },
         });
-
-        // adding metamask adapter
-
-        // it will add/update  the metamask adapter in to web3auth class
-        // web3auth.configureAdapter(metamaskAdapter);
-
         setWeb3auth(web3auth);
 
         await web3auth.initModal();
